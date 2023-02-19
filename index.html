@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Challenge</title>
+</head>
+
+<style>
+    body{
+       padding-left: 900px;
+       padding-top: 200px;
+       background-color: rgb(0, 0, 0);
+    }
+   .pulse_anim{
+         height: 60px;
+         width: 60px;
+         border-radius: 50%;
+         background-color: rgb(212, 211, 211);
+         position: absolute;
+         margin: 50px;
+         animation: pulse1 3.1s infinite;
+         
+   }
+   .pulse_anim1{
+         height: 160px;
+         width: 160px;
+         border-radius: 50%;
+         background-color: rgb(59, 4, 104);
+         margin-left: -360px;
+         opacity: 60%;
+         position: relative;
+         box-shadow: 0 0 0 0 rgb(59, 4, 104);
+         animation: pulse 0.4s infinite;
+   }
+   @keyframes pulse {
+       to{
+        background-color: rgb(121, 94, 143);
+        box-shadow: 0 0 0 160px rgb(121, 94, 143);
+       }
+   }
+   @keyframes pulse1 {
+       to{
+        background-color: rgb(136, 124, 146);
+        box-shadow: 0 0 0 40px rgb(136, 124, 146);
+        opacity: 20px;
+       }
+   }
+
+   .p1{
+    height: 100px;
+    width: 200px;
+    background-color: blueviolet;
+    margin-top: 200px;
+    margin-left: -380px;
+    display: flex;
+    animation: pup1 0.5s infinite;
+   }
+
+   .n1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: apparutionn1 4.8s ease-out infinite;
+    color: blueviolet;
+   }
+
+   @keyframes apparutionn1 {
+
+from {
+    opacity: 0;
+  transform: translateX(-400px);
+}
+
+to {
+    opacity: 1;
+  transform: translateX(-30px);
+}
+
+}
+.n2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: apparutionn2 4.8s ease-out infinite;
+    color: blueviolet;
+   }
+
+   @keyframes apparutionn2 {
+
+from {
+    opacity: 0;
+  transform: translateX(400px);
+}
+
+to {
+    opacity: 1;
+  transform: translateX(17px);
+}
+
+}
+.a{
+    animation: apparutiona 4.8s ease-out infinite;
+    color: blueviolet;
+   }
+
+   @keyframes apparutiona {
+
+from {
+    opacity: 0;
+  
+}
+
+to {
+    opacity: 1;
+  
+}
+
+}
+   
+   
+
+
+
+</style>
+
+
+
+<body>
+
+    <div class="pulse_anim1" >
+        <div class="pulse_anim"></div>
+    </div>
+
+    
+    <div style="display: flex; margin-left: -300px;" class="n1">
+        <p class="n1" style="font-size: 90px; margin-top:190px;">N</p>
+    </div>
+    <div style="display: flex; margin-left: -300px;" class="a">
+        <p class="a" style="font-size: 90px; margin-top:-193px">a</p>
+    </div>
+    <div style="display: flex; margin-left: -300px;" class="n2">
+        <p class="n2" style="font-size: 90px;margin-top:-193px">N</p>
+    </div>
+    
+    
+
+</body>
+</html>
